@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>FORMULAIRE</title>
+</head>
+<form id="signupForm">
+    <div>
+      <label for="firstName">Prénom</label>
+      <input type="text" id="firstName" required>
+      <div class="error" id="errorFirstName"></div>
+    </div>
+    <div>
+      <label for="lastName">Nom</label>
+      <input type="text" id="lastName" required>
+      <div class="error" id="errorLastName"></div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+      <div class="error" id="errorEmail"></div>
+    </div>
+    <div>
+      <label>Sexe</label>
+      <input type="radio" name="gender" value="Homme" id="male"><label for="male">Homme</label>
+      <input type="radio" name="gender" value="Femme" id="female"><label for="female">Femme</label>
+      <input type="radio" name="gender" value="Autre" id="other"><label for="other">Autre</label>
+      <div class="error" id="errorGender"></div>
+    </div>
+    <div>
+      <label for="country">Pays</label>
+      <select id="country">
+        <option value="">Choisir un pays</option>
+        <option value="Bénin">Bénin</option>
+        <option value="Togo">Togo</option>
+        <option value="Côte d’Ivoire">Côte d’Ivoire</option>
+        <option value="Sénégal">Sénégal</option>
+      </select>
+      <div class="error" id="errorCountry"></div>
+    </div>
+    <div>
+      <input type="checkbox" id="terms">
+      <label for="terms">J’accepte les Conditions générales d’utilisation</label>
+      <div class="error" id="errorTerms"></div>
+    </div>
+    <button type="submit">S'inscrire</button>
+  </form>
+  <div id="successMessage"></div>
+  <script src="scripts.js"></script>
+  
