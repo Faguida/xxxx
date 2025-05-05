@@ -36,10 +36,23 @@ body {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 0;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
     transition: border-color 0.3s;
+  }
+
+  form div {
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    float: right;
+  }
+
+  form label {
+    margin-right: 2em;
   }
   
   input[type="text"]:focus,
